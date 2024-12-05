@@ -18,6 +18,8 @@ const LoadingIconButton = lazy(() => import("franchise/LoadingIconButton"));
 const LoadingScreen = lazy(() => import("franchise/LoadingScreen"));
 const PhoneCode = lazy(() => import("franchise/PhoneCode"));
 const ProfileIcon = lazy(() => import("franchise/ProfileIcon"));
+const SearchForm = lazy(() => import("franchise/SearchForm"));
+const SuccessMessage = lazy(() => import("franchise/SuccessMessage"));
 
 function App() {
   const Announcement = ["This is an annoucementbar component"];
@@ -84,6 +86,11 @@ function App() {
         </div>
         <PhoneCode />
         <ProfileIcon text="MicroFC" className="max-w-max" />
+        <SearchForm placeholder="This is search form component" />
+        <SuccessMessage
+          success="This is success message component"
+          className="max-w-max"
+        />
       </div>
       <Calendar
         mode="single"
